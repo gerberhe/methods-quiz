@@ -77,6 +77,14 @@ module MethodsQuiz
 
 	# TODO - write two_as_one?
 
+	def two_as_one?(a,b,c)
+		if (a + b) == c || (a + c) == b || (b + c) == a
+			true
+		else
+			false
+		end	
+	end
+
 	# TODO - write pig_latinify
 
 end
