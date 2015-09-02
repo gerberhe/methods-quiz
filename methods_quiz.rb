@@ -53,6 +53,28 @@ module MethodsQuiz
 	
 	# TODO - write closer_to
 
+	def closer_to?(t,a,b)
+		if a > t
+			aNew = ((t - a) * -1)
+		elsif a < t
+			aNew = (t - a)
+		end
+
+		if b > t
+			bNew = ((t - b) * -1)
+		elsif b < t
+			bNew = (t - b)
+		end
+
+		if aNew == bNew
+			0
+		elsif aNew < bNew
+			a
+		elsif aNew > bNew
+			b
+		end
+	end
+
 	# TODO - write two_as_one?
 
 	# TODO - write pig_latinify
