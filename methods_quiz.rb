@@ -2,8 +2,15 @@ module MethodsQuiz
 	
 	# TODO - write has_teen?
 
-	def elevenish?(n)
-		if n % 11 == 0 || (n - 1) % 11 == 0
+	def has_teen?(array)
+		one = array[0]
+		two = array[1]
+		three = array[2]
+		if one >= 13 && one <= 19
+			true
+		elsif two >= 13 && two <= 19
+			true
+		elsif three >= 13 && three <= 19
 			true
 		else
 			false

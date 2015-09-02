@@ -14,7 +14,7 @@ class MethodsQuizTest < MiniTest::Test
 	# TODO - write tests here
 
 	def test_has_teen
-		assert_equal true,@m.has_teen?([12,13,14])
+		assert_equal true,@m.has_teen?([13,12,14])
 		assert_equal true,@m.has_teen?([12,13,11])
 		assert_equal false,@m.has_teen?([12,9,11])
 		assert_equal false,@m.has_teen?([3,9,8])
