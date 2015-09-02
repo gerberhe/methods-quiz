@@ -1,6 +1,14 @@
 module MethodsQuiz
 	
 	# TODO - write has_teen?
+
+	def elevenish?(n)
+		if n % 11 == 0 || (n - 1) % 11 == 0
+			true
+		else
+			false
+		end
+	end
 	
 	# TODO - write not_string
 	
