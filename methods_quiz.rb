@@ -28,6 +28,28 @@ module MethodsQuiz
 	end
 	
 	# TODO - write icy_hot?
+
+	def icy_hot?(a,b)
+		aTrue = 0
+		bTrue = 0
+		if a > 100 || a < 0
+			aTrue = 1
+		else
+			aTrue = 0
+		end
+
+		if b > 100 || b < 0
+			bTrue = 1
+		else
+			bTrue = 0
+		end
+
+		if aTrue == 1 && bTrue == 1
+			true
+		else
+			false
+		end
+	end
 	
 	# TODO - write closer_to
 
