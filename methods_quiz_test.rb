@@ -28,4 +28,13 @@ class MethodsQuizTest < MiniTest::Test
 		assert_equal "notcat",@m.not_string?("notcat")
 		assert_equal "notman",@m.not_string?("notman")
 	end
+
+	def test_icy_hot
+		assert_equal true,@m.icy_hot?(-5,105)
+		assert_equal true,@m.icy_hot?(-7,110)
+		assert_equal false,@m.icy_hot?(7,110)
+		assert_equal false,@m.icy_hot?(7,95)
+		assert_equal false,@m.icy_hot?(-7,95)
+		assert_equal false,@m.icy_hot?(-7,65)
+	end
 end
