@@ -64,6 +64,6 @@ class MethodsQuizTest < MiniTest::Test
 		assert_equal "ogday",@m.pig_latinify?("dog")
 		assert_equal "atcay",@m.pig_latinify?("cat")
 		assert_equal "appleway",@m.pig_latinify?("apple")
-		assert_equal "orangewayway",@m.pig_latinify?("orange")
+		assert_equal "orangeway",@m.pig_latinify?("orange")
 	end
 end

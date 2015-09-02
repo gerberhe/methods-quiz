@@ -87,4 +87,12 @@ module MethodsQuiz
 
 	# TODO - write pig_latinify
 
+	def pig_latinify?(str)
+		if str[0].downcase == "a" || str[0].downcase == "e" || str[0].downcase == "i" || str[0].downcase == "o" || str[0].downcase == "u"
+			str + "way"
+		else
+			"#{str[1..-1]}#{str[0,1]}ay"
+		end
+	end
+
 end
