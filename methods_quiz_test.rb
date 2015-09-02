@@ -37,4 +37,15 @@ class MethodsQuizTest < MiniTest::Test
 		assert_equal false,@m.icy_hot?(-7,95)
 		assert_equal false,@m.icy_hot?(-7,65)
 	end
+
+	def test_closer_to
+		assert_equal 0,@m.closer_to?(5,7,3)
+		assert_equal 0,@m.closer_to?(5,4,6)
+		assert_equal 6,@m.closer_to?(5,3,6)
+		assert_equal 7,@m.closer_to?(5,7,2)
+		assert_equal 7,@m.closer_to?(10,7,2)
+		assert_equal 12,@m.closer_to?(10,5,12)
+		assert_equal 0,@m.closer_to?(10,5,15)
+		assert_equal 0,@m.closer_to?(10,7,13)
+	end
 end
