@@ -59,4 +59,11 @@ class MethodsQuizTest < MiniTest::Test
 		assert_equal false,@m.two_as_one?(45,27,9)
 		assert_equal false,@m.two_as_one?(45,27,139)
 	end
+
+	def test_pig_latinify
+		assert_equal "ogday",@m.pig_latinify?("dog")
+		assert_equal "atcay",@m.pig_latinify?("cat")
+		assert_equal "appleway",@m.pig_latinify?("apple")
+		assert_equal "orangewayway",@m.pig_latinify?("orange")
+	end
 end
