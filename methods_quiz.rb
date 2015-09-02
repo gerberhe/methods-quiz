@@ -18,6 +18,14 @@ module MethodsQuiz
 	end
 	
 	# TODO - write not_string
+
+	def not_string?(str)
+		if str[0].downcase == "n" && str[1].downcase == "o" && str[2].downcase == "t"
+			str
+		else
+			"not" + str
+		end
+	end
 	
 	# TODO - write icy_hot?
 	
